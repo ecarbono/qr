@@ -4,7 +4,7 @@ from PIL import Image, ImageFont, ImageDraw
 
 #title_font = ImageFont.truetype('arial.ttf', 15)
 
-with open("./litoplas_qr.csv", 'r') as file:
+with open("./qr_data.csv", 'r') as file:
   csvreader = csv.reader(file, delimiter=';')
   for row in csvreader:
     #Se obtiene la cedula y se guarda en la lista
