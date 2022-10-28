@@ -24,7 +24,7 @@ with open("./qr_data.csv", 'r') as file:
     my_image = Image.open(imagen_name)
     title_text = data_nombre
     image_editable = ImageDraw.Draw(my_image)
-    image_editable.text((50,15),title_font,title_text,align="center")    
+    image_editable.text((50,15),title_text,font=title_font,align="center")    
     imagen_nombreqr="./qr_litoplas_nombres/"+data_nombre+".png"
     my_image.save(imagen_nombreqr)  
 
